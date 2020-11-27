@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-#import setuptools
 
 with open('README.rst',encoding='UTF-8') as f:
 	readme = f.read()
@@ -9,21 +8,10 @@ setup(
 	version='0.1.0',
 	description='Database backups locally or to AWS S3.',
 	long_description=readme,
-	author='Weiner',
+	author='Rachel',
 	author_email='weinerr1@mymail.nku.edu',
 	packages=find_packages('src'),
 	package_dir={'':'src'},
 	install_requires=[]
 )
 
-#setuptools.setup(
-#	name='pgbackup',
-#	version='0.1.0',
-#	description='Database backups locally or to AWS S3.',
-#	long_description=readme,
-#	author='Weiner',
-#	author_email='weinerr1@mymail.nku.edu',
-#	packages=setuptools.find_packages('src'),
-#	package_dir={":'src'"},
-#	install_requires=[]
-#)
